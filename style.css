@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 90%;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .card {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    box-shadow: 0px 0px 20px rgb(0,0,0,.3);
+    margin: 8px;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+.profile_title h1{
+    width: 55px;
+    height: 55px;
+    background: rgb(0,0,0,.15);
+    border-radius: 50%;
+}
+header .card .profile_title{
+    display: flex;
+    align-items: center;
+
+}
+.card .profile_title .title{margin: 5px 12px;}
+.title h2{
+    width: 100px;
+    height: 12px;
+    background: rgb(0,0,0,.15);
+    border-radius:5px;
+}
+.title p{
+    width: 100px;
+    height: 12px;
+    background: rgb(0,0,0,.15);
+    border-radius:5px;
+    margin-top: 10px;
+}
+header .card p{
+    width: 80%;
+    height: auto;
+    height: 8px;
+    margin-top: 10px;
+    background: rgb(0,0,0,.13);
+    border-radius: 8px;
+}
+header.card p:nth-child(2){
+    margin-top: 20px;
+} header .card p:nth-child(3){width: 100%}header .card p:nth-child(4){width: 40%;}
+header .card button{
+    width: 44%;
+    height: 24px;
+    background-color: rgb(0,0,0,.13);
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin: 22px 5px 0 5px;
+}
+header .card::before{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgb(255,255,255.5), transparent);
+    z-index: 111;
+    left: 0%;
+    transform: skew(0deg);
+    animation: load 2s linear;
+    transition-delay: -1s;
+}
+@keyframes load{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
